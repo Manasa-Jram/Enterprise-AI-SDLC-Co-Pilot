@@ -1,0 +1,25 @@
+{
+  "name": "enterprise-ai-sdlc-copilot",
+  "version": "1.0.0",
+  "description": "Enterprise AI SDLC Co-Pilot - AI-powered repository analysis and architecture visualization",
+  "scripts": {
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "dev:backend": "cd backend && npm start",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "build:frontend": "cd frontend && npm run build"
+  },
+  "keywords": [
+    "ai",
+    "sdlc",
+    "architecture",
+    "mcp",
+    "github",
+    "visualization"
+  ],
+  "author": "Enterprise AI Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
